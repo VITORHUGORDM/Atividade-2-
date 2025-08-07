@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "atividade2_backend": {
+      "main": "src/atividade2_backend/main.mo",
+      "type": "motoko"
+    },
+    "atividade2_frontend": {
+      "dependencies": [
+        "atividade2_backend"
+      ],
+      "source": [
+        "src/atividade2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "atividade2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
